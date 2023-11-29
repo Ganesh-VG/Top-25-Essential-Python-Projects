@@ -1,0 +1,56 @@
+from tkinter import *
+import tkinter.font as font
+
+window = Tk()
+window.title("Widget Examples")
+window.minsize(width=500, height=500)
+window.config(padx=20, pady=50)
+
+def type_speed():
+    helv36 = font.Font(family='Helvetica', size=15)
+    global statement
+    statement = []
+
+    global label
+    #Labels
+    label = Label(text="Days are not of equal value in one’s life. Some bring happiness while others bring sadness."
+                       " Sadness and happiness both are equally important to man’s life, since they are the two sides"
+                       " of a coin. As we cannot forget the happiest day, we are unable to forget the saddest day "
+                       "of our life too. The saddest day of my life was the Diwali Day. Diwali is considered to be"
+                       " a happy festival and till last Diwali, it was my favorite festival. On last Diwali,"
+                       " my sister, my brother and I were busy lighting the fireworks. I was holding a "
+                       "‘fuljhari’ in my hand and unfortunately my younger brother, who was standing "
+                       "just beside me, had a cracker in his hand. This cracker caught "
+                       "fire and a very loud explosion was heard which shook my sister and me. "
+                       "After that, we all could think of nothing else than blood stained cotton, "
+                       "bandage, dettol etc.I could not sleep and I cried a lot.",  bd=5, height=9, width=100, wraplength=850, font=helv36)
+    label.grid(row=0, column=0)
+
+    global display
+    display = Label(text='Score:', bd=5, height=3, width=100, font=helv36)
+    display.grid(row=1, column=0)
+
+    global entry
+    entry = Entry(bd=5, width=30, font=helv36, justify=CENTER)
+    entry.grid(row=2, column=0)
+
+    global reset
+    reset = Button(text="Reset", bd=5, height=1, width=10, font=helv36, command=type_speed)
+    reset.grid(row=3, column=0)
+
+
+def key_press(e):
+    window.after(60000, score)
+    if e.keysym == 'space':
+        statement.append(entry.get())
+        print(statement)
+        entry.delete(0, END)
+
+
+def score():
+    display['text'] = f"Words per minute: {len(statement)}"
+window.bind("<Key>", key_press)
+
+type_speed()
+
+window.mainloop()
