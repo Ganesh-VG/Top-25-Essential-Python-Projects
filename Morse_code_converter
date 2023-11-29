@@ -1,0 +1,14 @@
+code = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..',
+        'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-','R': '.-.',
+        'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 'Z': '--..', '1': '.----',
+        '2': '..---', '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.',
+        '0': '-----', '/': '/'}
+statement = input('Please enter the statement to be converted:\n').upper()
+split_statement = statement.replace(" ", '/')
+for i in split_statement:
+    for x in i:
+        try:
+                print(code[x],end=" ")
+        except KeyError:
+                print("< Error converting: Enter valid input>")
+                exit()
