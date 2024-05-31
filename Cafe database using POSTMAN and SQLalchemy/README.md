@@ -1,4 +1,6 @@
-# Cafe API Flask App
+# Cafe database using POSTMAN and SQLalchemy
+
+
 
 This project is a Flask web application that provides an API for managing a database of cafes. The application supports CRUD operations (Create, Read, Update, Delete) and allows users to interact with the cafe data via HTTP requests. The app uses SQLAlchemy for database operations and SQLite as the database backend.
 
