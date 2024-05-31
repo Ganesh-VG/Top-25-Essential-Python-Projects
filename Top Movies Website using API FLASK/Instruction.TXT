@@ -1,0 +1,5 @@
+1. Get the API Token from TMDB website.
+2. Use add movies button to add movies : just type movie name it will take up all the details through api.
+3. Give your rating and review for the movie.
+4. Use delete button to delete the movie.
+5. Use edit button to edit the review and rating. 
