@@ -1,4 +1,4 @@
-# Flask Web Application for Blog and Contact Form
+# Flask Web Application for Blog
 
 This project is a Flask web application that displays blog posts fetched from an external API and allows users to submit contact information through a Google Form. The project utilizes Selenium for form submission automation and sends an email notification upon successful form submission.
 
