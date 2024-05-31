@@ -1,4 +1,4 @@
-# Book Collection Flask App
+# Book rating library website using Flask SQLalchemy
 
 This project is a simple web application built using Flask and SQLAlchemy to manage a collection of books. Users can add, edit, and delete books from the collection. The application uses an SQLite database to store book data, including title, author, and rating.
 
