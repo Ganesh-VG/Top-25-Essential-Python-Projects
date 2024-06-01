@@ -28,10 +28,6 @@ This repository consists of 25 Python projects that represent key use cases in P
 
 Contributions are welcome! If you have a project idea or improvement, feel free to fork the repository and submit a pull request.
 
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ---
 
 This repository is a comprehensive resource for anyone looking to get started with Python programming. By working through these projects, you will gain hands-on experience and develop a deeper understanding of Python. Happy coding!
