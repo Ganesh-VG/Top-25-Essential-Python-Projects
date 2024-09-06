@@ -84,8 +84,6 @@ This project simulates a coffee-making machine using Object-Oriented Programming
 
 This project demonstrates the use of OOP principles to model a real-world system. It effectively encapsulates different functionalities into classes, providing a clean and modular approach to building a coffee-making machine simulation. The project can be expanded with additional features such as user authentication, more coffee options, and advanced inventory management.
 
-![1719367433432](https://github.com/user-attachments/assets/7a44f673-a55f-40fe-adf9-3256e611c283)
-
 ## Future Enhancements
 
 - Add more coffee types and customizations.
